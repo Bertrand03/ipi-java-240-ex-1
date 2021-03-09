@@ -10,9 +10,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        ApplicationContext ctx = null;
+//        ApplicationContext ctx = null;
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         //Configuration Java
-        ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
+//        ctx = new AnnotationConfigApplicationContext(SpringConfig.class);
         BitcoinService bs = ctx.getBean(BitcoinService.class);
         ProduitManager pm = ctx.getBean(ProduitManager.class);
 

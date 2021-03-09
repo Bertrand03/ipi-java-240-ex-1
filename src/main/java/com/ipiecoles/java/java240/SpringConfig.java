@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-//@PropertySource("classpath:app.properties")
+@PropertySource("classpath:app.properties")
 @ComponentScan(basePackages ="com.ipiecoles.java.java240")
 public class SpringConfig {
 //

@@ -64,7 +64,7 @@ public class ProduitManager {
      */
     @PostConstruct
     public void initialiserCatalogue() throws IOException {
-        String catalogue = webPageManager.getPageContentsFromCacheIfExists("file:/C:/Users/bertrand.cerot/Desktop/liste.txt");
+        String catalogue = webPageManager.getPageContentsFromCacheIfExists("file:/C:/Users/bertrand.cerot/Desktop/catalogue.txt");
         int nbProduits = 0;
         for(String line : catalogue.split("\n")){
             String[] elements = line.split(";");

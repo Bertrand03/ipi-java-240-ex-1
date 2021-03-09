@@ -14,7 +14,7 @@ public class BitcoinService {
 
     private Double rate = null;
 
-//    @Value("${bitcoinService.forceRefresh}")
+    @Value("${bitcoinService.forceRefresh}")
     private Boolean forceRefresh;
 
     public Boolean getForceRefresh() {
@@ -24,9 +24,6 @@ public class BitcoinService {
     public void setForceRefresh(Boolean forceRefresh) {
         this.forceRefresh = forceRefresh;
     }
-
-
-
 
     /**
      * Méthode qui renvoie le cours du Bitcoin
