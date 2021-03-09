@@ -41,7 +41,7 @@ public class BitcoinService {
 
         System.out.println("Récupération du cours du bitcoin sur site distant");
 
-        String apiResponse = webPageManager.getPageContents("file:/C:/Users/nicolas.grand-jean/Desktop/price.json");
+        String apiResponse = webPageManager.getPageContents("file:/C:/Users/bertrand.cerot/Desktop/price.json");
         apiResponse = apiResponse.replace("{\"EUR\":","");
         apiResponse = apiResponse.replace("}","");
         rate = Double.parseDouble(apiResponse);
